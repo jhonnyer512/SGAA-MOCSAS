@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Logo_Des{
+    border: 1px solid Black;
+    width: 1000vh;
+    height: 100px;
+}
+
+.B_Busqueda {
+    border: 1px solid black;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 23px; left: 15px;
+    border-radius: 15px;
+}
+
+#Logo_Lupa{
+    width: 40px; height: 40px;
+    position: absolute;
+    top: 5px; left: 5px;
+}
+#Buscar{
+    width: 40px; height: 40px;
+    position: absolute;
+    top: 15px; left: 100px;
+}
+#Logo_Down{
+    width: 40px; height: 40px;
+    position: absolute;
+    top: 5px; left: 250px;
+}
+
+#Op1{
+    width: 40px; height: 40px;
+    position: absolute;
+    top: 15px; left: 500px;
+}
+
+#Op2{
+    width: 40px; height: 40px;
+    position: absolute;
+    top: 15px; left: 600px;
+}
+
+#Op3{
+    width: 40px; height: 40px;
+    position: absolute;
+    top: 15px; left: 700px;
+}
+
+#Op4{
+    width: 40px; height: 40px;
+    position: absolute;
+    top: 15px; left: 800px;
+}
+
+#Op5{
+    width: 40px; height: 40px;
+    position: absolute;
+    top: 15px; left: 900px;
+}
+#Logo_Carpeta{
+    width: 40px; height: 40px;
+    position: absolute;
+    top: 5px; left: 1100px;
+}
+
+#Logo_Campana{
+    width: 30px; height: 30px;
+    position: absolute;
+    top: 10px; left: 1200px;
+}

@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.Logo_Des{
+.Menu_Header{
     border: 1px solid Black;
     width: 1000vh;
     height: 100px;
@@ -37,40 +37,85 @@
 #Op1{
     width: 40px; height: 40px;
     position: absolute;
-    top: 15px; left: 500px;
+    top: 40px; left: 500px;
 }
 
 #Op2{
     width: 40px; height: 40px;
     position: absolute;
-    top: 15px; left: 600px;
+    top: 40px; left: 600px;
 }
 
 #Op3{
     width: 40px; height: 40px;
     position: absolute;
-    top: 15px; left: 700px;
+    top: 40px; left: 700px;
 }
 
 #Op4{
     width: 40px; height: 40px;
     position: absolute;
-    top: 15px; left: 800px;
+    top: 40px; left: 800px;
 }
 
 #Op5{
     width: 40px; height: 40px;
     position: absolute;
-    top: 15px; left: 900px;
+    top: 40px; left: 900px;
 }
 #Logo_Carpeta{
     width: 40px; height: 40px;
     position: absolute;
-    top: 5px; left: 1100px;
+    top: 25px; left: 1100px;
 }
 
 #Logo_Campana{
     width: 30px; height: 30px;
     position: absolute;
-    top: 10px; left: 1200px;
+    top: 25px; left: 1200px;
+}
+
+.Body_Header{
+    border: 1px solid Black;
+    width: 1000vh;
+    height: 200px;
+    flex-grow: 5px;
+}
+
+#Titulo1 {
+    position: relative;
+    top: 25px; left: 25px;
+}
+
+#Op2_1 {
+    width: 300px; height: 40px;
+    position: absolute;
+    top: 140px; left: 400px;
+}
+
+#Op2_2 {
+    width: 300px; height: 40px;
+    position: absolute;
+    top: 140px; left: 550px;
+}
+
+#Op2_3 {
+    width: 300px; height: 40px;
+    position: absolute;
+    top: 140px; left: 670px;
+}
+
+#Op2_4 {
+    width: 300px; height: 40px;
+    position: absolute;
+    top: 140px; left: 780px;
+}
+
+.Vista {
+    border: 1px solid black;
+    width: 300px;
+    height: 25px;
+    position: relative;
+    top: 70px; left: 50px;
+    border-radius: 15px;
 }

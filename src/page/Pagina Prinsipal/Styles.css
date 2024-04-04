@@ -78,7 +78,7 @@
 .Body_Header{
     border: 1px solid Black;
     width: 1000vh;
-    height: 200px;
+    height:150px;
     flex-grow: 5px;
 }
 
@@ -90,32 +90,64 @@
 #Op2_1 {
     width: 300px; height: 40px;
     position: absolute;
-    top: 140px; left: 400px;
+    top: 140px; left: 500px;
 }
 
 #Op2_2 {
     width: 300px; height: 40px;
     position: absolute;
-    top: 140px; left: 550px;
+    top: 140px; left: 650px;
 }
 
 #Op2_3 {
     width: 300px; height: 40px;
     position: absolute;
-    top: 140px; left: 670px;
+    top: 140px; left: 770px;
 }
 
 #Op2_4 {
     width: 300px; height: 40px;
     position: absolute;
-    top: 140px; left: 780px;
+    top: 140px; left: 880px;
 }
 
-.Vista {
+.Vista1 {
     border: 1px solid black;
-    width: 300px;
-    height: 25px;
+    width: 150px;
+    height: 40px;
     position: relative;
-    top: 70px; left: 50px;
-    border-radius: 15px;
+    top: 43%; left: 10px;
+    border-radius: 10px 0px 0px 10px;
+}
+.Vista2 {
+    border: 1px solid black;
+    width: 150px;
+    height: 40px;
+    position: relative;
+    top: 15%; left: 160px;
+    border-radius: 0px 10px 10px 0px;
+}
+#Logo_Cuadricula{
+    width: 40px; height: 40px;
+    position: absolute;
+    top: 0px; left: -10px;
+    border-radius: 150px;
+}
+#Vista_Cu{
+    width: 200px; height: 40px;
+    position: absolute;
+    top: 12px; left: 20px;
+    border-radius: 150px;
+}
+#Logo_Lista{
+    width: 25px; height: 25px;
+    position: absolute;
+    top: 8px; left: 1px;
+    border-radius: 150px;
+}
+#Vista_Li{
+    width: 100px; height: 40px;
+    position: absolute;
+    top: 12px; left: 40px;
+    border-radius: 150px;
 }

@@ -4,13 +4,19 @@
 }
 
 .Menu_Header{
-    border: 1px solid Black;
-    width: 1000vh;
+    width: 100%;
     height: 100px;
+}
+.Separator_1{
+    width: 100%; height: 2px;
+    position: relative;
+    top: 0; left: 5px;
+    border: #C7CED9;
+    background-color: #C7CED9;
 }
 
 .B_Busqueda {
-    border: 1px solid black;
+    border: 1px solid #C7CED9;
     width: 300px;
     height: 50px;
     position: absolute;
@@ -76,8 +82,7 @@
 }
 
 .Body_Header{
-    border: 1px solid Black;
-    width: 1000vh;
+    width: 100%;
     height:150px;
     flex-grow: 5px;
 }
@@ -112,7 +117,7 @@
 }
 
 .Vista1 {
-    border: 1px solid black;
+    border: 1px solid #C7CED9;
     width: 150px;
     height: 40px;
     position: relative;
@@ -120,7 +125,7 @@
     border-radius: 10px 0px 0px 10px;
 }
 .Vista2 {
-    border: 1px solid black;
+    border: 1px solid #C7CED9;
     width: 150px;
     height: 40px;
     position: relative;
@@ -143,11 +148,116 @@
     width: 25px; height: 25px;
     position: absolute;
     top: 8px; left: 1px;
-    border-radius: 150px;
 }
 #Vista_Li{
     width: 100px; height: 40px;
     position: absolute;
     top: 12px; left: 40px;
     border-radius: 150px;
+}
+.Acces_lim{
+    border: solid #C7CED9;
+    border-top: hidden;
+    border-bottom: hidden;
+    width: 200px; height: 40px;
+    position: absolute;
+    top: 208px; left: 350px;
+}
+#Logo_Candado{
+    width: 25px; height: 25px;
+    position: absolute;
+    top: 8px; left: 0px;
+}
+#Acces_lim{
+    width: 150px; height: 25px;
+    position: absolute;
+    top: 12px; left: 40px;
+}
+#Logo_Fle{
+    width: 20px; height: 20px;
+    position: absolute;
+    top: 12px; left: 160px;
+}
+.Echo {
+    border: 1px solid #C7CED9;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 30%; left: 1020px;
+    border-radius: 5px;
+}
+.Alin_Izq {
+    border: 1px solid #C7CED9;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 30%; left: 1080px;
+    border-radius: 5px;
+}
+.Alin_Cen {
+    border: 1px solid #C7CED9;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 30%; left: 1140px;
+    border-radius: 5px;
+}
+.Selec {
+    border: 1px solid #C7CED9;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 30%; left: 1200px;
+    border-radius: 5px;
+}
+.Edit {
+    border: 1px solid #C7CED9;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 30%; left: 1260px;
+    border-radius: 5px;
+}
+#Logo_Chek{
+    width: 35px; height: 30px;
+    position: relative;
+    top: 5px; left: 2px;
+}
+#Logo_Cen{
+    width: 35px; height: 30px;
+    position: relative;
+    top: 5px; left: 2px;
+}
+#Logo_Izq{
+    width: 35px; height: 30px;
+    position: relative;
+    top: 5px; left: 2px;
+}
+#Logo_Cir{
+    width: 35px; height: 30px;
+    position: relative;
+    top: 5px; left: 2px;
+}
+#Logo_Cuad{
+    width: 25px; height: 25px;
+    position: relative;
+    top: 10px; left: 9px;
+}
+#Subtitle {
+    position: relative;
+    top: 25px; left: 25px;
+}
+.Noti{
+    background-color: #EAB308;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 4px; left: 210px;
+    border-radius: 100px;
+}
+#Num_Noti{
+    color: #CA8A04;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    top: 1px; left: 6px;
 }

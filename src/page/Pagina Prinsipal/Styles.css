@@ -3,302 +3,47 @@
     padding: 0;
 }
 
-.Menu_Header{
-    width: 100%;
-    height: 100px;
-}
-.Separator_1{
-    width: 100%; height: 2px;
+.Header{
+    background-color: #0E0480;
+    width: 100%; height: 150px;
     position: relative;
-    top: 0; left: 5px;
-    border: #C7CED9;
-    background-color: #C7CED9;
 }
-
-.B_Busqueda {
-    border: 1px solid #C7CED9;
-    width: 300px;
-    height: 50px;
+#Tituo1{
     position: absolute;
-    top: 23px; left: 650px;
-    border-radius: 15px;
-}
-
-#Logo_Lupa{
-    width: 40px; height: 40px;
-    position: absolute;
-    top: 5px; left: 5px;
-}
-#Buscar{
-    width: 40px; height: 40px;
-    position: absolute;
-    top: 15px; left: 100px;
-}
-#Logo_Down{
-    width: 40px; height: 40px;
-    position: absolute;
-    top: 5px; left: 250px;
-}
-
-#Op1{
-    width: 40px; height: 40px;
-    position: absolute;
-    top: 40px; left: 50px;
-}
-
-#Op2{
-    width: 40px; height: 40px;
-    position: absolute;
-    top: 40px; left: 150px;
-}
-
-#Op3{
-    width: 40px; height: 40px;
-    position: absolute;
-    top: 40px; left: 250px;
-}
-
-#Op4{
-    width: 40px; height: 40px;
-    position: absolute;
-    top: 40px; left: 350px;
-}
-
-#Op5{
-    width: 40px; height: 40px;
-    position: absolute;
-    top: 40px; left: 450px;
-}
-#Logo_Carpeta{
-    width: 40px; height: 40px;
-    position: absolute;
-    top: 25px; left: 1100px;
-}
-
-#Logo_Campana{
-    width: 30px; height: 30px;
-    position: absolute;
-    top: 30px; left: 1200px;
-}
-
-.Body_Header{
-    width: 100%;
-    height:150px;
-    flex-grow: 5px;
-}
-
-#Titulo1 {
-    position: relative;
-    top: 25px; left: 25px;
-}
-
-#Op2_1 {
-    width: 300px; height: 40px;
-    position: absolute;
-    top: 140px; left: 500px;
-}
-
-#Op2_2 {
-    width: 300px; height: 40px;
-    position: absolute;
-    top: 140px; left: 650px;
-}
-
-#Op2_3 {
-    width: 300px; height: 40px;
-    position: absolute;
-    top: 140px; left: 770px;
-}
-
-#Op2_4 {
-    width: 300px; height: 40px;
-    position: absolute;
-    top: 140px; left: 880px;
-}
-
-.Vista1 {
-    border: 1px solid #C7CED9;
-    width: 150px;
-    height: 40px;
-    position: relative;
-    top: 43%; left: 10px;
-    border-radius: 10px 0px 0px 10px;
-}
-.Vista2 {
-    border: 1px solid #C7CED9;
-    width: 150px;
-    height: 40px;
-    position: relative;
-    top: 15%; left: 160px;
-    border-radius: 0px 10px 10px 0px;
-}
-#Logo_Cuadricula{
-    width: 40px; height: 40px;
-    position: absolute;
-    top: 0px; left: -10px;
-    border-radius: 150px;
-}
-#Vista_Cu{
-    width: 200px; height: 40px;
-    position: absolute;
-    top: 12px; left: 20px;
-    border-radius: 150px;
-}
-#Logo_Lista{
-    width: 25px; height: 25px;
-    position: absolute;
-    top: 8px; left: 1px;
-}
-#Vista_Li{
-    width: 100px; height: 40px;
-    position: absolute;
-    top: 12px; left: 40px;
-    border-radius: 150px;
-}
-.Acces_lim{
-    border: solid #C7CED9;
-    border-top: hidden;
-    border-bottom: hidden;
-    width: 200px; height: 40px;
-    position: absolute;
-    top: 208px; left: 350px;
-}
-#Logo_Candado{
-    width: 25px; height: 25px;
-    position: absolute;
-    top: 8px; left: 0px;
-}
-#Acces_lim{
-    width: 150px; height: 25px;
-    position: absolute;
-    top: 12px; left: 40px;
-}
-#Logo_Fle{
-    width: 20px; height: 20px;
-    position: absolute;
-    top: 12px; left: 160px;
-}
-.Echo {
-    border: 1px solid #C7CED9;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 30%; left: 1020px;
-    border-radius: 5px;
-}
-.Alin_Izq {
-    border: 1px solid #C7CED9;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 30%; left: 1080px;
-    border-radius: 5px;
-}
-.Alin_Cen {
-    border: 1px solid #C7CED9;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 30%; left: 1140px;
-    border-radius: 5px;
-}
-.Selec {
-    border: 1px solid #C7CED9;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 30%; left: 1200px;
-    border-radius: 5px;
-}
-.Edit {
-    border: 1px solid #C7CED9;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 30%; left: 1260px;
-    border-radius: 5px;
-}
-#Logo_Chek{
-    width: 35px; height: 30px;
-    position: relative;
-    top: 5px; left: 2px;
-}
-#Logo_Cen{
-    width: 35px; height: 30px;
-    position: relative;
-    top: 5px; left: 2px;
-}
-#Logo_Izq{
-    width: 35px; height: 30px;
-    position: relative;
-    top: 5px; left: 2px;
-}
-#Logo_Cir{
-    width: 35px; height: 30px;
-    position: relative;
-    top: 5px; left: 2px;
-}
-#Logo_Cuad{
-    width: 25px; height: 25px;
-    position: relative;
-    top: 10px; left: 9px;
-}
-#Subtitle {
-    position: relative;
-    top: 5px; left: 25px;
-}
-.Noti{
-    background-color: #EAB308;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 262px; left: 210px;
-    border-radius: 100px;
-}
-#Num_Noti{
-    color: #CA8A04;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    position: relative;
-    top: 1px; left: 6px;
-}
-.Tareas{
-    width: 100%; height: 300px;
-    position: relative;
-    top: 10px; left: 10px;
-    border-radius: 30px;
-}
-.Tarea1{
-    border: solid #605BFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: white;
     width: 300px; height: 200px;
-    position: relative;
-    top: 10px; left: 10px;
-    border-radius: 30px;
+    top: 50px; left:50px ;
 }
-#Materia1{
-    position: relative;
-    top: 20px; left: 30px;
-    font-style: unset;
+.Separator1{
+    background-color: #fff;
+    width: 1px; height: 60px;
+    position: absolute;
+    top: 40px; left: 300px;
 }
-#Progreso{
-    position: relative;
-    top: 50px; left: 30px;
-    font-style: unset;
+#Op1{
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-style: normal;
+    color: white;
+    width: 300px;height: 200px;
+    top: 50px; left:550px ;
 }
-.Bar_Progre{
-    position: relative;
-    width: 200px; height: 10px;
-    background-color: #C7CED9;
-    top: 55px; left: 30px;
-    border-radius: 2px;
+#Op2{
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+    width: 300px; height: 200px;
+    top: 50px; left:660px ;
 }
-.Bar_Echo{
-    position: relative;
-    width: 120px; height: 10px;
-    top: 45px; left: 30px;
-    background-color: #605BFF;
-    border-radius: 2px;
-}
-#Porsen{
-    position: relative;
-    top: 9px; left: 200px;
+#Op3{
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+    width: 300px; height: 200px;
+    top: 50px; left:750px ;
 }

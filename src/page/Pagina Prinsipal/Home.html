@@ -1,24 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles.css">
-    <link rel="stylesheet" href="normalize.css">
-
-    <title>Mocsas</title>
+    <title>Informe de Avances</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="Header">
-        <div class="Separator1"></div>
-        <h2 id="Op1">Avances</h2>
-        <h2 id="Op2">Guias</h2>
-        <h2 id="Op3">Planes</h2>
-        <img src="../../../public/image/analisis.png" id="Analisis_log">
-        <img src="../../../public/image/salir.png" id="Salir_log">
+    <div class="sidebar">
+        <div class="logo">
+            SERMA
+            <img src="\public\image\Logo de SERMA.jpg" >
+        </div>
+        <div class="user-info">
+            <img src="user.png" >
+            <p>Jorge Nicolas Espejo</p>
+            <span>Estudiante</span>
+        </div>
+        <nav>
+            <ul>
+                <li>🔍 Análisis Académico</li>
+                <li>📚 Materias</li>
+                <li>📖 Planes de estudio</li>
+                <li>🧠 Habilidades</li>
+                <li>📑 Guías</li>
+                <li>⚙️ Ajustes</li>
+            </ul>
+        </nav>
     </div>
-    <div class="Barra_L">
-        <div class="Separator2"></div>
+
+    <div class="main-content">
+        <header>
+            <h1>Informe de Avances</h1>
+            <div class="tabs">
+                <span class="active">General</span>
+                <span>Calendario</span>
+                <span>Progreso</span>
+            </div>
+        </header>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar tareas...">
+        </div>
+
+        <div class="dashboard">
+            <div class="habilidades">
+                <div class="habilidad">
+                    <h3>Comunicando al mundo</h3>
+                    <p>Progreso: 3/4</p>
+                </div>
+                <div class="habilidad">
+                    <h3>Los algoritmos mi pasión</h3>
+                    <p>Progreso: 2/4</p>
+                </div>
+                <div class="habilidad">
+                    <h3>Contando con números</h3>
+                    <p>Progreso: 1/4</p>
+                </div>
+                <div class="habilidad">
+                    <h3>Construyendo modelos científicos</h3>
+                    <p>Progreso: 0/4</p>
+                </div>
+            </div>
+
+            <div class="avance-total">
+                <div class="circle-progress">
+                    <p>80%</p>
+                    <p>Cumplido</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="linea-avances">
+            <h2>Linea de Avances</h2>
+            <div class="avance-bar">
+                <span>Matemáticas</span>
+                <div class="bar" style="width: 20%; background-color: red;">20%</div>
+            </div>
+            <div class="avance-bar">
+                <span>Comunicación</span>
+                <div class="bar" style="width: 35%; background-color: blue;">35%</div>
+            </div>
+            <div class="avance-bar">
+                <span>Ciencias</span>
+                <div class="bar" style="width: 17%; background-color: green;">17%</div>
+            </div>
+            <div class="avance-bar">
+                <span>Tecnología</span>
+                <div class="bar" style="width: 55%; background-color: purple;">55%</div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

@@ -1,0 +1,188 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f8fa;
+  display: flex;
+}
+
+/* Botón hamburguesa */
+.toggle-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1001;
+  background: #2a3fdd;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+
+.sidebar {
+  width: 250px;
+  background: #2a3fdd;
+  color: #fff;
+  min-height: 100vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: -250px; 
+  transition: left 0.3s ease;
+  z-index: 1000;
+  border-radius: 0% 5% 5% 0%;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar .logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.sidebar .logo img {
+  width: 60px;
+  margin-top: 0.5rem;
+}
+
+.sidebar .user-info {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sidebar .user-info img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav li {
+  margin: 1rem 0;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.sidebar nav li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dashboard {
+  flex: 1;
+  padding: 2rem;
+  width: 100%;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar.active ~ .dashboard {
+  margin-left: 270px;
+}
+
+.avance-general h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.progress-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.progress-header a {
+  color: #3b5bfd;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.progress-bar {
+  background: #eee;
+  border-radius: 8px;
+  height: 10px;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(to right, orange, #ff7043);
+  border-radius: 8px;
+}
+
+.revision-section {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  flex: 1;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.card.urgente {
+  background: #e3f2fd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("/public/image/2logocalendar.png");
+  background-size: cover;
+}
+
+.btn-calendario {
+  background: #ff7043;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  align-self: start;
+}
+
+/* Guías */
+.card.guias {
+  background: #f3e5f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.card.guias img {
+  width: 70px;
+  height: auto;
+}

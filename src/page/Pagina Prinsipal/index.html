@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SERMA - Iniciar sesión</title>
+  <link rel="stylesheet" href="stylesIndex.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <div class="login-left">
+        <img src="/public/image/Logo de SERMA.jpg" alt="Logo SERMA" class="logo">
+        <h1>SERMA</h1>
+        <p>Accede a tu cuenta para continuar con tus cursos.</p>
+      </div>
+
+      <div class="login-right">
+        <form action="Home.html">
+          <label for="email">Tu correo</label>
+          <input type="email" id="email" placeholder="correo@ejemplo.com" />
+
+          <label for="password">Contraseña</label>
+          <div class="password-field">
+            <input type="password" id="password" placeholder="********" />
+            <button type="button" class="toggle-pass">👁</button>
+          </div>
+
+          <button type="submit" class="btn">Iniciar sesión</button>
+
+          <div class="terms">
+            <input type="checkbox" id="terms" />
+            <label for="terms">
+              Al iniciar una cuenta, usted debe aceptar nuestros términos y condiciones.
+            </label>
+          </div>
+
+          <div class="extra-links">
+            <a href="#">¿Olvidaste tu cuenta?</a> | 
+            <a href="#">Buscar</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

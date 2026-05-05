@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mis Materias</title>
+  <link rel="stylesheet" href="StylesMateriasAN.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- SIDEBAR -->
+<div class="sidebar" id="sidebar">
+  <h2>Panel</h2>
+
+  <nav class="menu">
+            <ul>
+                <li><a href="HomeAN.html"><i class="fas fa-qrcode"></i> Panel General</a></li>
+                <li><a href="EstudiantesAN.html"><i class="fas fa-user-graduate"></i> Estudiantes</a></li>
+                <li class="active"><a href="MateriasAN.html"><i class="fas fa-book"></i> Materias</a></li>
+                <li><a href="RegistroAN.html"><i class="fas fa-chart-line"></i> Registro de Avances</a></li>
+                <li><a href="AjustesAN.html"><i class="fas fa-cog"></i> Ajustes</a></li>
+                <li><a href="/src/page/PaginaPrinsipal/Index.html"><i class="fas fa-sign-out-alt"> </i> Cerrar sesión</a></li>
+            </ul>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-info">
+          <img src="/public/image/perfil.png" alt="Usuario">
+          <p>Profesor Camacho</p>
+        </div>
+
+        <div class="company">
+          <img src="/public/image/Logo de SERMA.jpg" alt="logo">
+          <span>SERMA</span>
+        </div>
+      </div>
+</div>
+
+<button class="toggle-btn" onclick="toggleSidebar()">
+  <i class="fas fa-bars"></i>
+</button>
+
+<header class="header">
+  <h1>Mis Materias</h1>
+  <div class="user">Prof.  Camacho</div>
+</header>
+
+<section class="cards">
+
+  <div class="card blue">
+    <h3>Matemática Aplicada</h3>
+    <p>Avance del grupo</p>
+    <div class="progress"><span style="width:78%"></span></div>
+    <div class="tags">
+      <span>Grupo A-1</span>
+      <span>32 Estudiantes</span>
+    </div>
+    <div class="actions">
+      <button class="outline">Ver estudiantes</button>
+      <button>Registrar</button>
+    </div>
+  </div>
+
+  <div class="card pink">
+    <h3>Inglés Avanzado</h3>
+    <p>Avance del grupo</p>
+    <div class="progress"><span style="width:45%"></span></div>
+    <div class="tags">
+      <span>Grupo B-2</span>
+      <span>28 Estudiantes</span>
+    </div>
+    <div class="actions">
+      <button class="outline">Ver estudiantes</button>
+      <button>Registrar</button>
+    </div>
+  </div>
+
+  <div class="card teal">
+    <h3>Teoría de la Comunicación</h3>
+    <p>Avance del grupo</p>
+    <div class="progress"><span style="width:92%"></span></div>
+    <div class="tags">
+      <span>Grupo C-1</span>
+      <span>24 Estudiantes</span>
+    </div>
+    <div class="actions">
+      <button class="outline">Ver estudiantes</button>
+      <button>Registrar</button>
+    </div>
+  </div>
+
+</section>
+
+<section class="bottom">
+
+  <div class="activity">
+    <h2>Actividad Reciente</h2>
+    <ul id="activityList"></ul>
+  </div>
+
+  <div class="summary">
+    <h2>Resumen Semanal</h2>
+    <p>Has completado el 85% de tus objetivos académicos.</p>
+    <button>Ver Reporte</button>
+  </div>
+
+</section>
+
+<button class="floating-btn" onclick="addActivity()">+</button>
+
+<script src="ScriptMateriasAN.js"></script>
+</body>
+</html>

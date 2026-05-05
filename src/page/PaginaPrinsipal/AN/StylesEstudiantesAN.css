@@ -1,0 +1,189 @@
+body{
+  margin:0;
+  font-family: 'Segoe UI';
+  display:flex;
+  background:#f4f6fb;
+}
+
+/* SIDEBAR */
+.sidebar{
+  width:250px;
+  background:#2f4bcc;
+  color:white;
+  height:100vh;
+  padding:20px;
+  position:fixed;
+  transform:translateX(-100%);
+  transition:.3s;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar.active{
+  transform:translateX(0);
+}
+
+.menu{
+  list-style:none;
+  padding:0;
+}
+
+.menu li{
+  padding:12px;
+  cursor:pointer;
+}
+
+.menu li:hover,
+.menu .active{
+  background:rgba(255,255,255,0.2);
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.user img{
+  width:40px;
+  border-radius:50%;
+}
+
+.sidebar-footer {
+  display: flex;
+  height: 20%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.user-info p {
+  flex-direction:row;
+  margin: 0;
+  font-size: 14px;
+}
+.user-info img {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+}
+
+.company {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.company img {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+}
+
+.company span {
+  font-size: 14px;
+}
+
+/* BOTON */
+.toggle-btn{
+  position:fixed;
+  top:10px;
+  left:10px;
+  border:none;
+  background:none;
+  font-size:20px;
+  cursor:pointer;
+}
+
+/* MAIN */
+.main{
+  margin-left:20px;
+  padding:20px;
+  flex:1;
+}
+
+/* HEADER */
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.btn{
+  background:#3f5efb;
+  color:white;
+  border:none;
+  padding:10px 15px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* CARDS */
+.cards{
+  display:flex;
+  gap:20px;
+  margin-top:20px;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  flex:1;
+}
+
+.success{border-left:5px solid green;}
+.warning{border-left:5px solid orange;}
+.danger{border-left:5px solid red;}
+
+/* TABLE */
+.table{
+  margin-top:20px;
+  background:white;
+  padding:20px;
+  border-radius:12px;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+th,td{
+  padding:10px;
+  text-align:left;
+}
+
+.progress-bar{
+  height:8px;
+  background:#ddd;
+  border-radius:10px;
+}
+
+.progress-bar div{
+  height:100%;
+  background:#2f4bcc;
+  border-radius:10px;
+}
+
+.warn{
+  background:orange !important;
+}
+
+.ok{color:green;}
+.warn-text{color:orange;}

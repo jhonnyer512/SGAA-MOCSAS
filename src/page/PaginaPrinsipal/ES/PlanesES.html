@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Plan de Estudio Fontán</title>
+  <link rel="stylesheet" href="StylesPlanesES.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<button class="toggle-btn" onclick="toggleSidebar()">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <div class="sidebar" id="sidebar">
+    <div class="logo">
+      <img src="/public/image/Logo de SERMA.jpg" alt="Logo">
+      <h2>SERMA</h2>
+    </div>
+    
+    <div class="user-info">
+      <img src="/public/image/perfil.png" alt="Usuario">
+      <p>Jorge Nicolas Espejo</p>
+      <span>Estudiante</span>
+    </div>
+    
+    <nav>
+      <ul>
+        <a href="HomeES.html"><li>🔍 Análisis Académico</li></a>
+        <a href="MateriasES.html" class="enlace"><li>📚 Materias</li></a>
+        <a href="PlanesES.html" class="enlace"><li>📖 Planes de estudio</li></a>
+        <li>🧠 Habilidades</li>
+        <li>📑 Guías</li>
+        <li>⚙️ Ajustes</li>
+        <a href="/src/page/PaginaPrinsipal/Index.html" class="enlace"><li><i class="fas fa-sign-out-alt"> </i> Cerrar sesión</li></a>
+      </ul>
+    </nav>
+  </div>
+<header class="header">
+  <h1>Mi Plan de Aprendizaje</h1>
+</header>
+
+<!-- PROGRESO PERSONAL -->
+<section class="progress-card">
+  <div class="progress-header">
+    <span>Avance Personalizado</span>
+    <span>Ruta Activa</span>
+  </div>
+  <div class="progress-bar">
+    <span style="width:58%"></span>
+  </div>
+  <p>58% completado</p>
+</section>
+
+<!-- PLAN ACTIVO -->
+<section class="plan-section">
+
+  <div class="plan-card">
+    <h3>Ruta Actual</h3>
+    <h2>Biología - Nivel 2</h2>
+    <p>Aprendizaje autónomo con acompañamiento tutorial</p>
+    <button>Continuar</button>
+  </div>
+
+  <div class="plan-info">
+    <h3>Estado del estudiante</h3>
+    <ul>
+      <li>📘 Cognitivo: 65%</li>
+      <li>🤝 Relacional: 70%</li>
+      <li>🧠 Autónomo: 55%</li>
+    </ul>
+  </div>
+
+</section>
+
+<!-- GUÍAS DE APRENDIZAJE -->
+<section class="guides">
+
+  <h3>Guías activas</h3>
+
+  <div class="guide-card">
+    <h4>Guía 1: La célula</h4>
+    <p>Estado: En progreso</p>
+    <div class="progress-bar small">
+      <span style="width:60%"></span>
+    </div>
+    <button>Abrir</button>
+  </div>
+
+  <div class="guide-card">
+    <h4>Guía 2: Genética básica</h4>
+    <p>Estado: Pendiente</p>
+    <div class="progress-bar small">
+      <span style="width:20%"></span>
+    </div>
+    <button>Abrir</button>
+  </div>
+
+</section>
+
+<!-- LOGROS -->
+<section class="achievements">
+  <h3>Logros alcanzados</h3>
+  <ul>
+    <li>✔ Comprende estructura celular</li>
+    <li>✔ Identifica funciones básicas</li>
+  </ul>
+</section>
+
+<!-- TUTOR -->
+<section class="tutor">
+  <h3>Acompañamiento</h3>
+  <p>Próxima tutoría: Viernes 10:00 AM</p>
+  <button>Agendar sesión</button>
+</section>
+ <script src="ScriptPlanesES.js"></script>
+</body>
+</html>

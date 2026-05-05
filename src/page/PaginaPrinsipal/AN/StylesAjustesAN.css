@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f6fb;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+/* SIDEBAR */
+.sidebar{
+  width:250px;
+  background:#2f4bcc;
+  color:white;
+  height:100vh;
+  padding:20px;
+  position:fixed;
+  transform:translateX(-100%);
+  transition:.3s;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar.active{
+  transform:translateX(0);
+}
+
+.menu{
+  list-style:none;
+  padding:0;
+}
+
+.menu li{
+  padding:12px;
+  cursor:pointer;
+}
+
+.menu li:hover,
+.menu .active{
+  background:rgba(255,255,255,0.2);
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.user img{
+  width:40px;
+  border-radius:50%;
+}
+
+.sidebar-footer {
+  display: flex;
+  height: 20%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.user-info p {
+  flex-direction:row;
+  margin: 0;
+  font-size: 14px;
+}
+.user-info img {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+}
+
+.company {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.company img {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+}
+
+.company span {
+  font-size: 14px;
+}
+
+/* BOTON */
+.toggle-btn{
+  position:fixed;
+  top:10px;
+  left:10px;
+  border:none;
+  background:none;
+  font-size:20px;
+  cursor:pointer;
+}
+
+.primary {
+  background: #3b5bdb;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.settings-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card.highlight {
+  background: linear-gradient(135deg, #4c6ef5, #5f3dc4);
+  color: white;
+}
+
+input, select {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button.outline {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}

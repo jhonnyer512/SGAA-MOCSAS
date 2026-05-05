@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Avances</title>
+  <link rel="stylesheet" href="StylesRegistroAN.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="sidebar" id="sidebar">
+  <h2>Panel</h2>
+
+  <nav class="menu">
+            <ul>
+                <li><a href="HomeAN.html"><i class="fas fa-qrcode"></i> Panel General</a></li>
+                <li><a href="EstudiantesAN.html"><i class="fas fa-user-graduate"></i> Estudiantes</a></li>
+                <li><a href="MateriasAN.html"><i class="fas fa-book"></i> Materias</a></li>
+                <li class="active"><a href="RegistroAN.html"><i class="fas fa-chart-line"></i> Registro de Avances</a></li>
+                <li><a href="AjustesAN.html"><i class="fas fa-cog"></i> Ajustes</a></li>
+                <li><a href="/src/page/PaginaPrinsipal/Index.html"><i class="fas fa-sign-out-alt"> </i> Cerrar sesión</a></li>
+            </ul>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-info">
+          <img src="/public/image/perfil.png" alt="Usuario">
+          <p>Profesor Camacho</p>
+        </div>
+
+        <div class="company">
+          <img src="/public/image/Logo de SERMA.jpg" alt="logo">
+          <span>SERMA</span>
+        </div>
+      </div>
+</div>
+
+<button class="toggle-btn" onclick="toggleSidebar()">
+  <i class="fas fa-bars"></i>
+</button>
+<header class="header">
+  <div>
+    <h1>Registro de Avances</h1>
+    <p>Monitoreo detallado de progreso académico</p>
+  </div>
+
+  <div class="actions">
+    <select>
+      <option>Biología Celular - Sec A</option>
+    </select>
+    <button class="primary">Exportar Excel</button>
+  </div>
+</header>
+
+<section class="stats">
+
+  <div class="card">
+    <h4>Promedio Grupal</h4>
+    <h2>84.2%</h2>
+    <span class="positive">+2.4%</span>
+  </div>
+
+  <div class="card">
+    <h4>Temas Completados</h4>
+    <h2>3/5</h2>
+    <div class="progress"><span style="width:60%"></span></div>
+  </div>
+
+  <div class="card">
+    <h4>En Riesgo</h4>
+    <h2>4</h2>
+    <small>Estudiantes con &lt; 65%</small>
+  </div>
+
+  <div class="card highlight">
+    <h4>Próximo Hito</h4>
+    <h2>Evaluación 2</h2>
+    <p>Vence en 3 días</p>
+  </div>
+
+</section>
+
+<section class="table-section">
+  <h3>Matriz de Calificaciones</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Tema 1</th>
+        <th>Tema 2</th>
+        <th>Tema 3</th>
+        <th>Evaluación</th>
+        <th>Final %</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+</section>
+
+<section class="bottom">
+
+  <div class="guide">
+    <h4>Guía de ingreso rápido</h4>
+    <p>Haz clic en los temas para cambiar estado.</p>
+  </div>
+
+  <div class="topics">
+    <h4>Temas en curso</h4>
+    <p>Tema 1: <span class="green">Completado</span></p>
+    <p>Tema 2: <span class="green">Completado</span></p>
+    <p>Tema 3: <span class="blue">En progreso</span></p>
+  </div>
+
+</section>
+
+<button class="floating-btn">+</button>
+
+<script src="ScriptRegistroAN.js"></script>
+</body>
+</html>

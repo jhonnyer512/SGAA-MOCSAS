@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informe de Avances</title>
+  <link rel="stylesheet" href="StylesHomeAD.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+
+    <button class="toggle-btn" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="sidebar" id="sidebar">
+        <h2 class="logo"></h2>
+
+        <nav class="menu">
+            <ul>
+                <li class="active"><i class="fas fa-qrcode"></i> Panel General</li>
+                <li><i class="fas fa-user-graduate"></i> Estudiantes</li>
+                <li><i class="fas fa-book"></i> Materias</li>
+                <li><i class="fas fa-user-circle" aria-hidden="true"></i> Analistas</li>
+                <li><a href="/src/page/PaginaPrinsipal/Index.html"><i class="fas fa-sign-out-alt"> </i> Cerrar sesión</a></li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="user-info">
+                <img src="/public/image/perfil.png" alt="Usuario">
+                <p>Dr. Armando Casas</p>
+            </div>
+
+            <div class="company">
+                <img src="/public/image/Logo de SERMA.jpg" alt="logo">
+                <span>SERMA</span>
+            </div>
+        </div>
+    </div>
+
+  <!-- CONTENIDO -->
+  <main class="main">
+
+    <!-- HEADER -->
+    <header class="topbar">
+      <h3>Panel del Administrador</h3>
+    </header>
+
+    <!-- BIENVENIDA -->
+    <section class="welcome">
+      <div>
+        <h1>¡Bienvenido de nuevo, Administrador!</h1>
+      </div>
+    </section>
+
+    <!-- CARDS -->
+    <section class="cards">
+      <div class="card">
+        <h4>Nº Analistas</h4>
+        <h2>10</h2>
+        <span></span>
+      </div>
+
+      <div class="card">
+        <h4>TOTAL ESTUDIANTES</h4>
+        <h2>242</h2>
+        <span>Distribuidos en 6 cursos</span>
+      </div>
+
+      <div class="card alert">
+        <h4>ALERTAS ACTIVAS</h4>
+        <h2>08</h2>
+        <span>Acción requerida</span>
+      </div>
+    </section>
+
+    <!-- ALERTAS -->
+    <section class="alerts">
+      <div class="alert-box">
+        <h3>Bajo rendimiento</h3>
+        <p></p>
+        <p></p>
+      </div>
+
+      <div class="tasks">
+        <h3>Actividades pendientes</h3>
+        <p></p>
+        
+      </div>
+    </section>
+
+  </main>
+  <script src="ScriptHomeAD.js"></script>
+</body>
+</html>

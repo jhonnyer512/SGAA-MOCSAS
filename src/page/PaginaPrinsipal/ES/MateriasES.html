@@ -11,6 +11,34 @@
 </head>
 
 <body>
+  <button class="toggle-btn" onclick="toggleSidebar()">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <div class="sidebar" id="sidebar">
+    <div class="logo">
+      <img src="/public/image/Logo de SERMA.jpg" alt="Logo">
+      <h2>SERMA</h2>
+    </div>
+    
+    <div class="user-info">
+      <img src="/public/image/perfil.png" alt="Usuario">
+      <p>Jorge Nicolas Espejo</p>
+      <span>Estudiante</span>
+    </div>
+    
+    <nav>
+      <ul>
+        <a href="HomeES.html"><li>🔍 Análisis Académico</li></a>
+        <a href="MateriasES.html" class="enlace"><li>📚 Materias</li></a>
+        <a href="PlanesES.html" class="enlace"><li>📖 Planes de estudio</li></a>
+        <li>🧠 Habilidades</li>
+        <li>📑 Guías</li>
+        <li>⚙️ Ajustes</li>
+        <a href="/src/page/PaginaPrinsipal/Index.html" class="enlace"><li><i class="fas fa-sign-out-alt"> </i> Cerrar sesión</li></a>
+      </ul>
+    </nav>
+  </div>
   </header>
 
   <section class="avance-general">
@@ -50,18 +78,7 @@
     </div>
   </section>
 
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="Home.html" class="enlace"><i class="fas fa-house"></i> Inicio</a></li>
-        <li class="activo"><i class="fas fa-book"></i> Cursos</li>
-        <li><i class="fas fa-magnifying-glass"></i> Buscar</li>
-        <li><i class="fas fa-comment"></i> Mensajes</li>
-        <li><i class="fas fa-user"></i> Perfil</li>
-      </ul>
-    </nav>
-  </footer>
-
+<script src="ScriptMateriasES.js"></script>
 </body>
 
 </html>

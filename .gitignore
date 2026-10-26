@@ -1,0 +1,16 @@
+# Configuración y datos privados
+.env
+.env.*
+/config.php
+/data/
+/logs/
+*.log
+
+# Entorno local y herramientas
+node_modules/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/

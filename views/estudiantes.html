@@ -1,0 +1,90 @@
+<!-- Plantillas SERMA. Edita el contenido entre las etiquetas de cada componente. -->
+<template data-template="studentPlansCard-01.html"
+  ><section
+    class="panel student-plans"
+    data-student-card
+    data-grade="{{slot0}}"
+    data-name="{{slot1}}"
+  >
+    <h3>{{slot2}} · {{slot3}}</h3>
+    <p class="muted">Aún no hay planes registrados para {{slot4}}°.</p>
+  </section></template
+>
+<template data-template="studentPlansCard-02.html"
+  ><section
+    class="panel student-plans"
+    data-student-card
+    data-grade="{{slot0}}"
+    data-name="{{slot1}}"
+  >
+    <div class="panel-head">
+      <div>
+        <h3>{{slot2}} · {{slot3}}</h3>
+        <small>Estudiante · {{slot4}}°</small>
+      </div>
+      <strong class="badge">{{slot5}}% total</strong>
+    </div>
+    {{slot6}}
+  </section></template
+>
+<template data-template="studentsPage-01.html"
+  ><div class="welcome">
+    <div>
+      <h2>{{slot0}}</h2>
+      <p>
+        Consulta el plan del grado, el checklist individual y el avance por
+        materia.
+      </p>
+    </div>
+    {{slot1}}{{slot2}}<button class="btn secondary small" id="refresh-academic">
+      Actualizar información
+    </button>
+  </div>
+  {{slot3}}{{slot4}}
+  <section class="panel">
+    <div class="filter-bar">
+      <div class="field">
+        <label>Buscar estudiante</label
+        ><input
+          type="search"
+          data-student-filter
+          placeholder="Nombre del estudiante"
+        />
+      </div>
+      <div class="field">
+        <label>Grado</label
+        ><select data-grade-filter>
+          <option value="">Todos</option>
+          {{slot5}}
+        </select>
+      </div>
+      <div class="field">
+        <label>Materia</label
+        ><select data-subject-filter>
+          <option value="">Todas</option>
+          {{slot6}}
+        </select>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Curso</th>
+            <th>Código</th>
+            <th>Acudiente</th>
+            {{slot7}}
+          </tr>
+        </thead>
+        <tbody>
+          {{slot8}}
+        </tbody>
+      </table>
+    </div>
+  </section>
+  {{slot9}}</template
+>
+<template data-template="studentTopicChecklist-01.html"
+  ><div class="topic-list">{{slot0}}</div></template
+>

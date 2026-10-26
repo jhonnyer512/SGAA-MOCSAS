@@ -1,0 +1,60 @@
+<!-- Plantillas SERMA. Edita el contenido entre las etiquetas de cada componente. -->
+<template data-template="home-01.html"
+  ><div class="welcome">
+    <div>
+      <h2>Hola, {{slot0}}</h2>
+      <p>Consulta el proceso académico y la información reciente.</p>
+    </div>
+    <span class="badge">{{slot1}}</span>
+  </div>
+  <div class="grid">
+    <div class="stat">
+      <small>Estudiantes visibles</small><strong>{{slot2}}</strong
+      ><em>Registros académicos</em>
+    </div>
+    <div class="stat">
+      <small>Materias</small><strong>{{slot3}}</strong
+      ><em>Planes disponibles</em>
+    </div>
+    <div class="stat">
+      <small>Etapas del plan completadas</small><strong>{{slot4}}</strong
+      ><em>Checklist por estudiante</em>
+    </div>
+    <div class="stat">
+      <small>Alertas de seguimiento</small><strong>{{slot5}}</strong
+      ><em>Debajo de {{slot6}}% de avance</em>
+    </div>
+  </div>
+  <section class="panel">
+    <div class="panel-head"><h3>Alertas de avance</h3></div>
+    {{slot7}}
+  </section>
+  <section class="panel">
+    <div class="panel-head">
+      <h3>Actividad reciente</h3>
+      <button class="btn secondary small" data-view="seguimiento">
+        Ver seguimiento
+      </button>
+    </div>
+    {{slot8}}
+  </section></template
+>
+<template data-template="recentTable-01.html"
+  ><div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Estudiante</th>
+          <th>Materia</th>
+          <th>Registro</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{slot0}}
+      </tbody>
+    </table>
+  </div></template
+>
+<template data-template="subjectName-01.html">{{slot0}} · {{slot1}}°</template>

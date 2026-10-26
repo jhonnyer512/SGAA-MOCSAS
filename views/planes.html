@@ -1,0 +1,43 @@
+<!-- Plantillas SERMA. Edita el contenido entre las etiquetas de cada componente. -->
+<template data-template="academicPage-01.html"
+  ><div class="welcome">
+    <div>
+      <h2>Materias y planes</h2>
+      <p>
+        Las plantillas se comparten por grado. El avance individual se actualiza
+        en la ficha del estudiante.
+      </p>
+    </div>
+    {{slot0}}
+  </div>
+  {{slot1}}
+  <section class="panel">
+    <div class="panel-head">
+      <h3>Planes de estudio por asignatura</h3>
+      {{slot2}}
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Asignatura</th>
+            <th>Plan y temas</th>
+            <th>Guía</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          {{slot3}}
+        </tbody>
+      </table>
+    </div>
+  </section></template
+>
+<template data-template="safeLink-01.html"
+  ><a href="{{slot0}}" target="_blank" rel="noopener noreferrer"
+    >Abrir guía</a
+  ></template
+>
+<template data-template="topicChecklist-01.html"
+  ><div class="topic-list">{{slot0}}{{slot1}}</div></template
+>

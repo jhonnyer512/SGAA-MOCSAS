@@ -1,0 +1,52 @@
+<!-- Plantillas SERMA. Edita el contenido entre las etiquetas de cada componente. -->
+<template data-template="settingsPage-01.html"
+  ><div class="welcome">
+    <div>
+      <h2>Configuración institucional</h2>
+      <p>Estos ajustes afectan las alertas y el nombre visible del sistema.</p>
+    </div>
+  </div>
+  <section class="panel">
+    <form id="settings-form">
+      <div class="form-grid">
+        <div class="field">
+          <label>Nombre de la institución</label
+          ><input
+            name="schoolName"
+            maxlength="120"
+            value="{{slot0}}"
+            required
+          />
+        </div>
+        <div class="field">
+          <label>Periodo académico</label
+          ><input name="term" maxlength="80" value="{{slot1}}" required />
+        </div>
+        <div class="field">
+          <label>Umbral para alertas de avance (%)</label
+          ><input
+            name="passingScore"
+            type="number"
+            min="0"
+            max="100"
+            value="{{slot2}}"
+            required
+          />
+        </div>
+        <div class="field">
+          <label>Tema</label
+          ><select name="theme">
+            <option value="light" {{slot3}}>Claro</option>
+            <option value="dark" {{slot4}}>Oscuro (experimental)</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-actions">
+        <button class="btn" type="submit">Guardar configuración</button>
+      </div>
+    </form>
+  </section>
+  <div class="notice">
+    La configuración se guarda en el servidor. Solo rectoría puede modificarla.
+  </div></template
+>

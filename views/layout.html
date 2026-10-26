@@ -1,0 +1,27 @@
+<!-- Plantillas SERMA. Edita el contenido entre las etiquetas de cada componente. -->
+<template data-template="render-01.html"
+  ><div class="shell">
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <img
+          class="brand-mark"
+          src="public/image/serma-icon-192.png?v=2"
+          alt="Logo SERMA"
+        />
+        <div><b>SERMA</b><small>{{slot0}}</small></div>
+      </div>
+      <nav class="nav">{{slot1}}</nav>
+      <div class="sidebar-user">
+        <strong>{{slot2}}</strong><small>{{slot3}}</small
+        ><button class="btn secondary small" id="logout">Cerrar sesión</button>
+      </div>
+    </aside>
+    <section class="main">
+      <header class="topbar">
+        <h1>{{slot4}}</h1>
+        <span>{{slot5}}</span>
+      </header>
+      <main class="content">{{slot6}}</main>
+    </section>
+  </div></template
+>

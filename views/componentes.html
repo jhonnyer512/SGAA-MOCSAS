@@ -1,0 +1,503 @@
+<!-- Plantillas SERMA. Edita el contenido entre las etiquetas de cada componente. -->
+<template data-template="bindForms-01.html"
+  ><div class="form-grid">
+    <div class="field">
+      <label>Grado</label
+      ><select name="gradeLevel">
+        {{slot0}}
+      </select>
+    </div>
+    <div class="field">
+      <label>Curso / grupo</label
+      ><input name="courseCode" required maxlength="40" placeholder="601" />
+    </div></div
+></template>
+<template data-template="bindForms-02.html"
+  ><div class="field">
+    <label>Nombre completo</label
+    ><input name="name" required minlength="3" maxlength="160" />
+  </div>
+  <div class="form-grid">
+    <div class="field">
+      <label>Curso</label
+      ><select name="courseId" required>
+        {{slot0}}
+      </select>
+    </div>
+    <div class="field">
+      <label>Código (opcional)</label><input name="code" maxlength="40" />
+    </div>
+  </div>
+  <div class="field">
+    <label
+      >Nombre del acudiente (opcional; el acceso se vincula en Cuentas y
+      permisos)</label
+    ><input name="guardian" maxlength="160" /></div
+></template>
+<template data-template="bindForms-03.html"
+  ><div class="field">
+    <label>Nombre</label><input name="name" required maxlength="100" />
+  </div>
+  <div class="field">
+    <label>Grado</label
+    ><select name="gradeLevel" required>
+      {{slot0}}
+    </select>
+  </div>
+  <div class="field">
+    <label>Descripción</label
+    ><textarea name="description" maxlength="500"></textarea></div
+></template>
+<template data-template="bindForms-04.html"
+  ><div class="field">
+    <label>Asignatura</label
+    ><select name="subjectId" required>
+      {{slot0}}
+    </select>
+  </div>
+  <div class="field">
+    <label>Título del plan de estudio</label
+    ><input name="title" required maxlength="160" />
+  </div>
+  <div class="field">
+    <label>Enlace de guía (opcional)</label
+    ><input
+      name="guide"
+      type="url"
+      maxlength="1000"
+      placeholder="https://..."
+    /></div
+></template>
+<template data-template="bindForms-05.html"
+  >{{slot0}}
+  <div class="field">
+    <label>Asignatura</label
+    ><select name="subjectId" data-subject-by-grade required>
+      {{slot1}}
+    </select>
+  </div>
+  <div class="field">
+    <label>Plan asociado (opcional)</label
+    ><select name="planId" data-plan-by-subject>
+      <option value="">Sin plan específico</option>
+      {{slot2}}
+    </select>
+  </div>
+  <div class="field">
+    <label>Actividad / registro</label
+    ><input name="note" required maxlength="1000" />
+  </div>
+  <div class="field">
+    <label>Observación (opcional)</label
+    ><textarea name="observation" maxlength="1000"></textarea>
+  </div>
+  <label class="toggle"
+    ><input name="completed" type="checkbox" /> Actividad completada</label
+  ></template
+>
+<template data-template="bindForms-06.html"
+  ><div class="field">
+    <label>Nombre completo</label
+    ><input name="name" required minlength="3" maxlength="120" />
+  </div>
+  <div class="field">
+    <label>Correo</label
+    ><input name="email" type="email" required maxlength="254" />
+  </div>
+  <div class="field">
+    <label>Contraseña temporal (mínimo 12 caracteres)</label
+    ><input
+      name="password"
+      type="password"
+      required
+      minlength="12"
+      maxlength="200"
+    />
+  </div>
+  <div class="field">
+    <label>Rol</label
+    ><select name="role">
+      <option value="analista">Analista</option>
+      <option value="familia">Familia</option>
+    </select>
+  </div>
+  <div class="field" data-role-section="familia">
+    <label>Hijos vinculados a esta cuenta (puedes seleccionar varios)</label
+    >{{slot0}}<small
+      >El acudiente solo verá la información de los estudiantes
+      seleccionados.</small
+    >
+  </div>
+  <div class="field" data-role-section="analista">
+    <label>Asignaturas del analista (obligatorio)</label>{{slot1}}<small
+      >Selecciona cada curso y la asignatura que dicta. Un mismo analista puede
+      tener varios cursos o materias.</small
+    >
+  </div>
+  <p class="muted">
+    Las familias solo consultan los estudiantes vinculados a su cuenta.
+  </p></template
+>
+<template data-template="bindForms-07.html"
+  ><div class="field">
+    <label>Título</label
+    ><input name="title" value="{{slot0}}" required maxlength="160" />
+  </div>
+  <div class="field">
+    <label>Enlace de guía</label
+    ><input name="guide" type="url" value="{{slot1}}" maxlength="1000" /></div
+></template>
+<template data-template="courseSubjectCheckboxList-01.html"
+  ><label class="assignment-option"
+    ><input
+      type="checkbox"
+      name="assignments"
+      value="{{slot0}}"
+      {{slot1}}
+    /><span>{{slot2}} · {{slot3}}</span></label
+  ></template
+>
+<template data-template="courseSubjectCheckboxList-02.html"
+  ><div class="assignment-list">{{slot0}}</div></template
+>
+<template data-template="familyStudentCheckboxList-01.html"
+  ><div class="assignment-list">{{slot0}}</div></template
+>
+<template data-template="modal-01.html"
+  ><section
+    class="panel"
+    style="
+      width: min(580px, 100%);
+      max-height: 90vh;
+      overflow: auto;
+      margin: 0;
+      box-shadow: 0 20px 60px #0003;
+    "
+  >
+    <div class="panel-head">
+      <h3>{{slot0}}</h3>
+      <button class="btn secondary small" type="button" data-close>
+        Cerrar
+      </button>
+    </div>
+    <form id="modal-form">
+      {{slot1}}
+      <div class="form-actions">
+        <button class="btn secondary" type="button" data-cancel>Cancelar</button
+        ><button class="btn" type="submit">Guardar</button>
+      </div>
+    </form>
+  </section></template
+>
+<template data-template="selectField-01.html"
+  ><div class="field">
+    <label>{{slot0}}</label
+    ><select name="{{slot1}}" required>
+      {{slot2}}
+    </select>
+  </div></template
+>
+<template data-template="showUsers-01.html"
+  ><table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Correo</th>
+        <th>Rol</th>
+        <th>Asignación</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{slot0}}
+    </tbody>
+  </table></template
+>
+<template data-template="showUsers-02.html"
+  >Estudiantes vinculados a {{slot0}}</template
+>
+<template data-template="showUsers-03.html"
+  ><div class="field">
+    <label>Selecciona todos los hijos vinculados</label>{{slot0}}<small
+      >El acudiente verá sus planes, porcentajes y observaciones.</small
+    >
+  </div></template
+>
+<template data-template="showUsers-04.html"
+  >Cursos y materias de {{slot0}}</template
+>
+<template data-template="showUsers-05.html"
+  ><div class="field">
+    <label>Asignaciones que puede gestionar</label>{{slot0}}<small
+      >El analista solo podrá modificar checklist y planes de estas materias y
+      grados asignados.</small
+    >
+  </div></template
+>
+<template data-template="subjectCheckboxList-01.html"
+  ><div class="assignment-list">{{slot0}}</div></template
+>
+<template data-template="view-01.html"
+  ><button data-view="{{slot0}}" class="{{slot1}}">{{slot2}}</button></template
+>
+<template data-template="view-02.html"
+  ><tr>
+    <td>{{slot0}}</td>
+    <td>{{slot1}}</td>
+    <td><span class="badge {{slot2}}">{{slot3}}%</span></td>
+  </tr></template
+>
+<template data-template="view-03.html"
+  ><div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Estudiante</th>
+          <th>Materia</th>
+          <th>Avance</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{slot0}}
+      </tbody>
+    </table>
+  </div></template
+>
+<template data-template="view-04.html"
+  ><div class="empty">
+    No hay alertas para mostrar. Cuando existan avances, aparecerán aquí.
+  </div></template
+>
+<template data-template="view-05.html"
+  ><tr>
+    <td>{{slot0}}</td>
+    <td>{{slot1}}</td>
+    <td>{{slot2}}</td>
+    <td>{{slot3}}</td>
+    <td><span class="badge {{slot4}}">{{slot5}}</span></td>
+  </tr></template
+>
+<template data-template="view-06.html"
+  ><span class="badge">{{slot0}}</span></template
+>
+<template data-template="view-07.html"
+  ><section class="panel">
+    <div class="panel-head"><h3>Cursos creados</h3></div>
+    <div class="course-list">{{slot0}}</div>
+  </section></template
+>
+<template data-template="view-08.html"
+  ><option value="{{slot0}}">{{slot1}}°</option></template
+>
+<template data-template="view-09.html"
+  ><option value="{{slot0}}" data-grade="{{slot1}}">
+    {{slot2}} · {{slot3}}°
+  </option></template
+>
+<template data-template="view-10.html"
+  ><td>
+    <button class="btn danger small" data-delete-student="{{slot0}}">
+      Retirar
+    </button>
+  </td></template
+>
+<template data-template="view-11.html"
+  ><tr data-student-row data-grade="{{slot0}}" data-name="{{slot1}}">
+    <td>{{slot2}}</td>
+    <td>{{slot3}}</td>
+    <td>{{slot4}}</td>
+    <td>{{slot5}}</td>
+    {{slot6}}
+  </tr></template
+>
+<template data-template="view-12.html"
+  ><article class="student-plan" data-student-subject="{{slot0}}">
+    <h4>
+      {{slot1}} · {{slot2}}
+      <span class="badge">{{slot3}}% · {{slot4}}/{{slot5}}</span>
+    </h4>
+    {{slot6}}
+  </article></template
+>
+<template data-template="view-13.html"
+  ><label class="stage-check"
+    ><input
+      type="checkbox"
+      data-student-topic="{{slot0}}"
+      data-topic-id="{{slot1}}"
+      data-stage="{{slot2}}"
+      {{slot3}}
+      {{slot4}}
+    /><span>{{slot5}}</span></label
+  ></template
+>
+<template data-template="view-14.html"
+  ><div class="topic-item">
+    <strong>{{slot0}}</strong>
+    <div class="topic-stages">{{slot1}}</div>
+  </div></template
+>
+<template data-template="view-15.html">
+  <button class="btn secondary small" type="button" data-edit-topic="{{slot0}}">
+    Renombrar
+  </button></template
+>
+<template data-template="view-16.html"
+  ><div class="topic-item"><strong>{{slot0}}</strong>{{slot1}}</div></template
+>
+<template data-template="view-17.html"
+  ><button class="btn secondary small" type="button" data-add-topic="{{slot0}}">
+    + Nuevo tema
+  </button></template
+>
+<template data-template="view-18.html"
+  ><tr>
+    <td>{{slot0}}</td>
+    <td>{{slot1}}°</td>
+    <td>{{slot2}}</td>
+    <td>{{slot3}}</td>
+    <td>
+      <button class="btn danger small" data-delete-subject="{{slot4}}">
+        Retirar
+      </button>
+    </td>
+  </tr></template
+>
+<template data-template="view-19.html"
+  ><section class="panel">
+    <h3>Asignaturas registradas</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Asignatura</th>
+            <th>Grado</th>
+            <th>Analistas</th>
+            <th>Descripción</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          {{slot0}}
+        </tbody>
+      </table>
+    </div>
+  </section></template
+>
+<template data-template="view-20.html"
+  ><button class="btn secondary small" data-edit-plan="{{slot0}}">
+    Editar plan
+  </button>
+</template>
+<template data-template="view-21.html"
+  ><button class="btn danger small" data-delete-plan="{{slot0}}">
+    Eliminar
+  </button></template
+>
+<template data-template="view-22.html"
+  ><tr>
+    <td>{{slot0}}</td>
+    <td><strong>{{slot1}}</strong>{{slot2}}</td>
+    <td>{{slot3}}</td>
+    <td>{{slot4}}{{slot5}}</td>
+  </tr></template
+>
+<template data-template="view-23.html"
+  ><tr>
+    <td colspan="4" class="empty">{{slot0}}</td>
+  </tr></template
+>
+<template data-template="view-24.html"
+  ><option value="{{slot0}}">{{slot1}}°</option></template
+>
+<template data-template="view-25.html"
+  ><option value="{{slot0}}" data-grade="{{slot1}}">
+    {{slot2}} · {{slot3}}°
+  </option></template
+>
+<template data-template="view-26.html"
+  ><tr
+    data-progress-row
+    data-grade="{{slot0}}"
+    data-name="{{slot1}}"
+    data-subject="{{slot2}}"
+  >
+    <td>{{slot3}}</td>
+    <td>{{slot4}}</td>
+    <td>{{slot5}}</td>
+    <td>{{slot6}} / {{slot7}}</td>
+    <td>
+      <span class="progress"><i style="width:{{slot8}}%"></i></span>{{slot9}}%
+    </td>
+  </tr></template
+>
+<template data-template="view-27.html"
+  ><option value="{{slot0}}">{{slot1}}°</option></template
+>
+<template data-template="view-28.html"
+  ><option value="{{slot0}}">{{slot1}}</option></template
+>
+<template data-template="view-29.html"
+  ><option value="{{slot0}}">{{slot1}}°</option></template
+>
+<template data-template="view-30.html"
+  ><option value="{{slot0}}">{{slot1}} · {{slot2}}°</option></template
+>
+<template data-template="view-31.html"
+  ><option value="{{slot0}}" data-grade="{{slot1}}">
+    {{slot2}} · {{slot3}}°
+  </option></template
+>
+<template data-template="view-32.html"
+  ><option value="{{slot0}}" data-subject-id="{{slot1}}">
+    {{slot2}} · {{slot3}}
+  </option></template
+>
+<template data-template="view-33.html"
+  ><option value="{{slot0}}">{{slot1}}</option></template
+>
+<template data-template="view-34.html"
+  ><label class="assignment-option"
+    ><input
+      type="checkbox"
+      name="subjectIds"
+      value="{{slot0}}"
+      {{slot1}}
+    /><span>{{slot2}} · {{slot3}}°</span></label
+  ></template
+>
+<template data-template="view-35.html"
+  ><label class="assignment-option"
+    ><input
+      type="checkbox"
+      name="familyStudentIds"
+      value="{{slot0}}"
+      {{slot1}}
+    /><span>{{slot2}} · {{slot3}}</span></label
+  ></template
+>
+<template data-template="view-36.html">{{slot0}} · {{slot1}}</template>
+<template data-template="view-37.html"
+  ><button class="btn secondary small" data-edit-assignments="{{slot0}}">
+    Cursos y materias
+  </button>
+</template>
+<template data-template="view-38.html"
+  ><button class="btn secondary small" data-edit-family="{{slot0}}">
+    Hijos vinculados
+  </button>
+</template>
+<template data-template="view-39.html"
+  ><button class="btn danger small" data-disable-user="{{slot0}}">
+    Desactivar
+  </button></template
+>
+<template data-template="view-40.html"
+  ><tr>
+    <td>{{slot0}}</td>
+    <td>{{slot1}}</td>
+    <td>{{slot2}}</td>
+    <td>{{slot3}}</td>
+    <td>{{slot4}}{{slot5}}{{slot6}}</td>
+  </tr></template
+>
